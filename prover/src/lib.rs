@@ -79,7 +79,8 @@ pub mod matrix;
 pub use matrix::{ColMatrix, RowMatrix};
 
 mod constraints;
-use constraints::{CompositionPoly, ConstraintCommitment, ConstraintEvaluator};
+use constraints::ConstraintEvaluator;
+pub use constraints::{CompositionPoly, ConstraintCommitment};
 
 mod composer;
 use composer::DeepCompositionPoly;
